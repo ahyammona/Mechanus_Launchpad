@@ -1,0 +1,50 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"AgentOracle.sol": "Agent_Oracle"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"AgentOracle.sol": {
+			"keccak256": "0x3c7e2427acaafd3a82deef4813b5200b63267dcb4599ac78cf644343e7e01e84",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a31b53dbd82dff2fea6284eee95d8d78cd258d3f3707ba3b4900353757555b7d",
+				"dweb:/ipfs/QmXT6PCAkNzgtyPvCcTFh4wa2v1rPwZdmxSKPiievdh3W3"
+			]
+		}
+	},
+	"version": 1
+}

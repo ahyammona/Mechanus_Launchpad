@@ -1,0 +1,458 @@
+{
+	"id": "18d95b62bf72d9b5be87f08a2d48e893",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.26",
+	"solcLongVersion": "0.8.26+commit.8a97fa7a",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"AgentOracle.sol": {
+				"content": "/**\r\n *Submitted for verification at BscScan.com on 2025-06-03\r\n*/\r\n\r\n/**\r\n *Submitted for verification at bscscan.com on 2023-07-26\r\n*/\r\n\r\n// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.6;\r\n\r\ncontract Agent_Oracle {\r\n    address token;\r\n    receive() external payable { }\r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			},
+			"remappings": []
+		}
+	},
+	"output": {
+		"contracts": {
+			"AgentOracle.sol": {
+				"Agent_Oracle": {
+					"abi": [
+						{
+							"stateMutability": "payable",
+							"type": "receive"
+						}
+					],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "    /* \"AgentOracle.sol\":200:282  contract Agent_Oracle {... */\n  mstore(0x40, 0x80)\n  callvalue\n  dup1\n  iszero\n  tag_1\n  jumpi\n  0x00\n  dup1\n  revert\ntag_1:\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"AgentOracle.sol\":200:282  contract Agent_Oracle {... */\n      mstore(0x40, 0x80)\n      jumpi(tag_2, calldatasize)\n      stop\n    tag_2:\n      0x00\n      dup1\n      revert\n\n    auxdata: 0xa264697066735822122021839b2f84549ad0e9061f8cd87f9d5a83051e155e0d14d1a16a4e033e87e14164736f6c634300081a0033\n}\n",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "6080604052348015600e575f80fd5b50604480601a5f395ff3fe608060405236600a57005b5f80fdfea264697066735822122021839b2f84549ad0e9061f8cd87f9d5a83051e155e0d14d1a16a4e033e87e14164736f6c634300081a0033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xE JUMPI PUSH0 DUP1 REVERT JUMPDEST POP PUSH1 0x44 DUP1 PUSH1 0x1A PUSH0 CODECOPY PUSH0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE CALLDATASIZE PUSH1 0xA JUMPI STOP JUMPDEST PUSH0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0x21 DUP4 SWAP12 0x2F DUP5 SLOAD SWAP11 0xD0 0xE9 MOD 0x1F DUP13 0xD8 PUSH32 0x9D5A83051E155E0D14D1A16A4E033E87E14164736F6C634300081A0033000000 ",
+							"sourceMap": "200:82:0:-:0;;;;;;;;;;;;;;;;;;;"
+						},
+						"deployedBytecode": {
+							"functionDebugData": {
+								"@_7": {
+									"entryPoint": null,
+									"id": 7,
+									"parameterSlots": 0,
+									"returnSlots": 0
+								}
+							},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "608060405236600a57005b5f80fdfea264697066735822122021839b2f84549ad0e9061f8cd87f9d5a83051e155e0d14d1a16a4e033e87e14164736f6c634300081a0033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLDATASIZE PUSH1 0xA JUMPI STOP JUMPDEST PUSH0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0x21 DUP4 SWAP12 0x2F DUP5 SLOAD SWAP11 0xD0 0xE9 MOD 0x1F DUP13 0xD8 PUSH32 0x9D5A83051E155E0D14D1A16A4E033E87E14164736F6C634300081A0033000000 ",
+							"sourceMap": "200:82:0:-:0;;;;;;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "13600",
+								"executionCost": "67",
+								"totalCost": "13667"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 200,
+									"end": 282,
+									"name": "PUSH",
+									"source": 0,
+									"value": "80"
+								},
+								{
+									"begin": 200,
+									"end": 282,
+									"name": "PUSH",
+									"source": 0,
+									"value": "40"
+								},
+								{
+									"begin": 200,
+									"end": 282,
+									"name": "MSTORE",
+									"source": 0
+								},
+								{
+									"begin": 200,
+									"end": 282,
+									"name": "CALLVALUE",
+									"source": 0
+								},
+								{
+									"begin": 200,
+									"end": 282,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 200,
+									"end": 282,
+									"name": "ISZERO",
+									"source": 0
+								},
+								{
+									"begin": 200,
+									"end": 282,
+									"name": "PUSH [tag]",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 200,
+									"end": 282,
+									"name": "JUMPI",
+									"source": 0
+								},
+								{
+									"begin": 200,
+									"end": 282,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 200,
+									"end": 282,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 200,
+									"end": 282,
+									"name": "REVERT",
+									"source": 0
+								},
+								{
+									"begin": 200,
+									"end": 282,
+									"name": "tag",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 200,
+									"end": 282,
+									"name": "JUMPDEST",
+									"source": 0
+								},
+								{
+									"begin": 200,
+									"end": 282,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 200,
+									"end": 282,
+									"name": "PUSH #[$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 200,
+									"end": 282,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 200,
+									"end": 282,
+									"name": "PUSH [$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 200,
+									"end": 282,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 200,
+									"end": 282,
+									"name": "CODECOPY",
+									"source": 0
+								},
+								{
+									"begin": 200,
+									"end": 282,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 200,
+									"end": 282,
+									"name": "RETURN",
+									"source": 0
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a264697066735822122021839b2f84549ad0e9061f8cd87f9d5a83051e155e0d14d1a16a4e033e87e14164736f6c634300081a0033",
+									".code": [
+										{
+											"begin": 200,
+											"end": 282,
+											"name": "PUSH",
+											"source": 0,
+											"value": "80"
+										},
+										{
+											"begin": 200,
+											"end": 282,
+											"name": "PUSH",
+											"source": 0,
+											"value": "40"
+										},
+										{
+											"begin": 200,
+											"end": 282,
+											"name": "MSTORE",
+											"source": 0
+										},
+										{
+											"begin": 200,
+											"end": 282,
+											"name": "CALLDATASIZE",
+											"source": 0
+										},
+										{
+											"begin": 200,
+											"end": 282,
+											"name": "PUSH [tag]",
+											"source": 0,
+											"value": "2"
+										},
+										{
+											"begin": 200,
+											"end": 282,
+											"name": "JUMPI",
+											"source": 0
+										},
+										{
+											"begin": 200,
+											"end": 282,
+											"name": "STOP",
+											"source": 0
+										},
+										{
+											"begin": 200,
+											"end": 282,
+											"name": "tag",
+											"source": 0,
+											"value": "2"
+										},
+										{
+											"begin": 200,
+											"end": 282,
+											"name": "JUMPDEST",
+											"source": 0
+										},
+										{
+											"begin": 200,
+											"end": 282,
+											"name": "PUSH",
+											"source": 0,
+											"value": "0"
+										},
+										{
+											"begin": 200,
+											"end": 282,
+											"name": "DUP1",
+											"source": 0
+										},
+										{
+											"begin": 200,
+											"end": 282,
+											"name": "REVERT",
+											"source": 0
+										}
+									]
+								}
+							},
+							"sourceList": [
+								"AgentOracle.sol",
+								"#utility.yul"
+							]
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.26+commit.8a97fa7a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"stateMutability\":\"payable\",\"type\":\"receive\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"AgentOracle.sol\":\"Agent_Oracle\"},\"evmVersion\":\"cancun\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"AgentOracle.sol\":{\"keccak256\":\"0x3c7e2427acaafd3a82deef4813b5200b63267dcb4599ac78cf644343e7e01e84\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a31b53dbd82dff2fea6284eee95d8d78cd258d3f3707ba3b4900353757555b7d\",\"dweb:/ipfs/QmXT6PCAkNzgtyPvCcTFh4wa2v1rPwZdmxSKPiievdh3W3\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [
+							{
+								"astId": 3,
+								"contract": "AgentOracle.sol:Agent_Oracle",
+								"label": "token",
+								"offset": 0,
+								"slot": "0",
+								"type": "t_address"
+							}
+						],
+						"types": {
+							"t_address": {
+								"encoding": "inplace",
+								"label": "address",
+								"numberOfBytes": "20"
+							}
+						}
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				}
+			}
+		},
+		"sources": {
+			"AgentOracle.sol": {
+				"ast": {
+					"absolutePath": "AgentOracle.sol",
+					"exportedSymbols": {
+						"Agent_Oracle": [
+							8
+						]
+					},
+					"id": 9,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.8",
+								".6"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "173:23:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"canonicalName": "Agent_Oracle",
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"fullyImplemented": true,
+							"id": 8,
+							"linearizedBaseContracts": [
+								8
+							],
+							"name": "Agent_Oracle",
+							"nameLocation": "209:12:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"constant": false,
+									"id": 3,
+									"mutability": "mutable",
+									"name": "token",
+									"nameLocation": "237:5:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 8,
+									"src": "229:13:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_address",
+										"typeString": "address"
+									},
+									"typeName": {
+										"id": 2,
+										"name": "address",
+										"nodeType": "ElementaryTypeName",
+										"src": "229:7:0",
+										"stateMutability": "nonpayable",
+										"typeDescriptions": {
+											"typeIdentifier": "t_address",
+											"typeString": "address"
+										}
+									},
+									"visibility": "internal"
+								},
+								{
+									"body": {
+										"id": 6,
+										"nodeType": "Block",
+										"src": "276:3:0",
+										"statements": []
+									},
+									"id": 7,
+									"implemented": true,
+									"kind": "receive",
+									"modifiers": [],
+									"name": "",
+									"nameLocation": "-1:-1:-1",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 4,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "256:2:0"
+									},
+									"returnParameters": {
+										"id": 5,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "276:0:0"
+									},
+									"scope": 8,
+									"src": "249:30:0",
+									"stateMutability": "payable",
+									"virtual": false,
+									"visibility": "external"
+								}
+							],
+							"scope": 9,
+							"src": "200:82:0",
+							"usedErrors": [],
+							"usedEvents": []
+						}
+					],
+					"src": "173:109:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}
